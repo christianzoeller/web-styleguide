@@ -1,0 +1,14 @@
+<resources>
+    <string name="projectName">Web Styleguide</string>
+    <string name="typography.title">Typography</string>
+    <string name="typography.description">Some elaborate text about typography.</string>
+    <string name="typography.headlineLarge.name">Headline Large</string>
+    <string name="typography.headlineMedium.name">Headline Medium</string>
+    <string name="typography.headlineSmall.name">Headline Small</string>
+    <string name="typography.titleLarge.name">Title Large</string>
+    <string name="typography.titleMedium.name">Title Medium</string>
+    <string name="typography.titleSmall.name">Title Small</string>
+    <string name="typography.bodyLarge.name">Body Large</string>
+    <string name="typography.bodyMedium.name">Body Medium</string>
+    <string name="typography.bodySmall.name">Body Small</string>
+</resources>
