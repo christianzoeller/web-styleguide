@@ -1,0 +1,7 @@
+@import url(global.css);
+
+.typography-container {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 24px;
+}
