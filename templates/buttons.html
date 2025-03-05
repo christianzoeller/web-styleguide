@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="{{languageCode}}">
+    <head>
+        <title>{{translations.buttons.title}}</title>
+        <link rel="stylesheet" href="stylesheets/buttons.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <script src="components/body-large.js"></script>
+        <script src="components/body-medium.js"></script>
+        <script src="components/bordered-button.js"></script>
+        <script src="components/button.js"></script>
+        <script src="components/button-container.js"></script>
+        <script src="components/headline-large.js"></script>
+        <script src="components/headline-medium.js"></script>
+        <script src="components/headline-small.js"></script>
+        <script src="components/main-container.js"></script>
+        <script src="components/spacer.js"></script>
+    </head>
+
+    <body>
+        <main-container>
+            <headline-large>{{translations.buttons.title}}</headline-large>
+            <default-spacer size-class="v-32"></default-spacer>
+            <body-medium>{{translations.buttons.description}}</body-medium>
+            <default-spacer size-class="v-64"></default-spacer>
+
+            <headline-medium>
+                {{translations.buttons.default.title}}
+            </headline-medium>
+            <default-spacer size-class="v-32"></default-spacer>
+            <body-medium>
+                {{translations.buttons.default.description}}
+            </body-medium>
+            <default-spacer size-class="v-48"></default-spacer>
+
+            <div class="vertical-button-container">
+                <default-button style="primary">
+                    <body-large slot="label">
+                        {{translations.buttons.primary}}
+                    </body-large>
+                </default-button>
+                <default-button style="secondary">
+                    <body-large slot="label">
+                        {{translations.buttons.secondary}}
+                    </body-large>
+                </default-button>
+                <default-button style="tertiary">
+                    <body-large slot="label">
+                        {{translations.buttons.tertiary}}
+                    </body-large>
+                </default-button>
+            </div>
+
+            <default-spacer size-class="v-48"></default-spacer>
+            <headline-medium>
+                {{translations.buttons.bordered.title}}
+            </headline-medium>
+            <default-spacer size-class="v-32"></default-spacer>
+            <body-medium>
+                {{translations.buttons.bordered.description}}
+            </body-medium>
+            <default-spacer size-class="v-48"></default-spacer>
+
+            <div class="vertical-button-container">
+                <bordered-button style="primary">
+                    <body-large slot="label">
+                        {{translations.buttons.primary}}
+                    </body-large>
+                </bordered-button>
+                <bordered-button style="secondary">
+                    <body-large slot="label">
+                        {{translations.buttons.secondary}}
+                    </body-large>
+                </bordered-button>
+                <bordered-button style="tertiary">
+                    <body-large slot="label">
+                        {{translations.buttons.tertiary}}
+                    </body-large>
+                </bordered-button>
+            </div>
+
+            <default-spacer size-class="v-48"></default-spacer>
+            <headline-medium>
+                {{translations.buttons.container.title}}
+            </headline-medium>
+            <default-spacer size-class="v-32"></default-spacer>
+            <body-medium>
+                {{translations.buttons.container.description}}
+            </body-medium>
+            <default-spacer size-class="v-48"></default-spacer>
+
+            <button-container>
+                <default-button style="primary">
+                    <body-large slot="label">
+                        {{translations.buttons.primary}}
+                    </body-large>
+                </default-button>
+                <default-button style="secondary">
+                    <body-large slot="label">
+                        {{translations.buttons.secondary}}
+                    </body-large>
+                </default-button>
+                <default-button style="tertiary">
+                    <body-large slot="label">
+                        {{translations.buttons.tertiary}}
+                    </body-large>
+                </default-button>
+            </button-container>
+
+            <default-spacer size-class="v-48"></default-spacer>
+            <headline-small>
+                {{translations.buttons.container.restricted.title}}
+            </headline-small>
+            <default-spacer size-class="v-24"></default-spacer>
+            <body-medium>
+                {{translations.buttons.container.restricted.description}}
+            </body-medium>
+            <default-spacer size-class="v-32"></default-spacer>
+
+            <button-container restrict-width-on-desktop="true">
+                <default-button style="primary">
+                    <body-large slot="label">
+                        {{translations.buttons.primary}}
+                    </body-large>
+                </default-button>
+                <default-button style="secondary">
+                    <body-large slot="label">
+                        {{translations.buttons.secondary}}
+                    </body-large>
+                </default-button>
+                <default-button style="tertiary">
+                    <body-large slot="label">
+                        {{translations.buttons.tertiary}}
+                    </body-large>
+                </default-button>
+            </button-container>
+
+            <default-spacer size-class="v-64"></default-spacer>
+        </main-container>
+    </body>
+</html>

@@ -4,8 +4,24 @@
     <string name="projectDescription">Some great explanation of what this project is about.</string>
 
     <!-- Navigation -->
+    <string name="navigation.toButtons">Buttons</string>
     <string name="navigation.toIndex">Home</string>
     <string name="navigation.toTypography">Typography</string>
+
+    <!-- Buttons -->
+    <string name="buttons.title">Buttons</string>
+    <string name="buttons.description">Some vivid description of what buttons can do.</string>
+    <string name="buttons.primary">Primary</string>
+    <string name="buttons.secondary">Secondary</string>
+    <string name="buttons.tertiary">Tertiary</string>
+    <string name="buttons.default.title">Default Buttons</string>
+    <string name="buttons.default.description">Something about these default buttons.</string>
+    <string name="buttons.bordered.title">Bordered Buttons</string>
+    <string name="buttons.bordered.description">Something about how these buttons are different from the default ones.</string>
+    <string name="buttons.container.title">Button Container</string>
+    <string name="buttons.container.description">Something about this convenience container for using multiple buttons.</string>
+    <string name="buttons.container.restricted.title">Button Container with Restricted Width</string>
+    <string name="buttons.container.restricted.description">Something about how this container behaves different on desktop.</string>
 
     <!-- Typography -->
     <string name="typography.title">Typography</string>
