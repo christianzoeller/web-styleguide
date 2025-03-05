@@ -1,6 +1,6 @@
 @import url(global.css);
 
-.link-container {
+.typography-container {
     display: grid;
     grid-template-columns: auto;
     row-gap: 24px;

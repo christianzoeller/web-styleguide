@@ -1,60 +1,32 @@
 <!doctype html>
 <html lang="{{languageCode}}">
     <head>
-        <title>{{translations.typography.title}}</title>
+        <title>{{translations.projectName}}</title>
         <link rel="stylesheet" href="stylesheets/index.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <script src="components/body-large.js"></script>
         <script src="components/body-medium.js"></script>
-        <script src="components/body-small.js"></script>
+        <script src="components/button.js"></script>
         <script src="components/headline-large.js"></script>
         <script src="components/headline-medium.js"></script>
-        <script src="components/headline-small.js"></script>
         <script src="components/main-container.js"></script>
         <script src="components/spacer.js"></script>
-        <script src="components/title-large.js"></script>
-        <script src="components/title-medium.js"></script>
-        <script src="components/title-small.js"></script>
     </head>
 
     <body>
         <main-container>
-            <headline-large>{{translations.typography.title}}</headline-large>
+            <headline-large>{{translations.projectName}}</headline-large>
             <default-spacer size-class="v-32"></default-spacer>
-            <body-medium>{{translations.typography.description}}</body-medium>
+            <body-medium>{{translations.projectDescription}}</body-medium>
             <default-spacer size-class="v-64"></default-spacer>
 
-            <div class="typography-container">
-                <headline-large>
-                    {{translations.typography.headlineLarge.name}}
-                </headline-large>
-                <headline-medium>
-                    {{translations.typography.headlineMedium.name}}
-                </headline-medium>
-                <headline-small>
-                    {{translations.typography.headlineSmall.name}}
-                </headline-small>
-
-                <title-large>
-                    {{translations.typography.titleLarge.name}}
-                </title-large>
-                <title-medium>
-                    {{translations.typography.titleMedium.name}}
-                </title-medium>
-                <title-small>
-                    {{translations.typography.titleSmall.name}}
-                </title-small>
-
-                <body-large>
-                    {{translations.typography.bodyLarge.name}}
-                </body-large>
-                <body-medium>
-                    {{translations.typography.bodyMedium.name}}
-                </body-medium>
-                <body-small>
-                    {{translations.typography.bodySmall.name}}
-                </body-small>
+            <div class="link-container">
+                <default-button href="typography.html" style="primary">
+                    <body-large slot="label">
+                        {{translations.navigation.toTypography}}
+                    </body-large>
+                </default-button>
             </div>
 
             <default-spacer size-class="v-64"></default-spacer>

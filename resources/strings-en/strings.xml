@@ -1,5 +1,13 @@
 <resources>
+    <!-- Project -->
     <string name="projectName">Web Styleguide</string>
+    <string name="projectDescription">Some great explanation of what this project is about.</string>
+
+    <!-- Navigation -->
+    <string name="navigation.toIndex">Home</string>
+    <string name="navigation.toTypography">Typography</string>
+
+    <!-- Typography -->
     <string name="typography.title">Typography</string>
     <string name="typography.description">Some elaborate text about typography.</string>
     <string name="typography.headlineLarge.name">Headline Large</string>
