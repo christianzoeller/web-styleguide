@@ -1,0 +1,82 @@
+/* Define colors */
+:root {
+    --surface: #f9faef;
+    --on-surface: #1a1c16;
+    --surface-variant: #dadbd0; /* surface dim */
+    --on-surface-variant: #44483d;
+    --primary: #4d662b;
+    --on-primary: #ffffff;
+    --primary-container: #ceeda2;
+    --on-primary-container: #112000;
+    --secondary: #586249;
+    --on-secondary: #ffffff;
+    --secondary-container: #dce7c7;
+    --on-secondary-container: #161e0b;
+    --tertiary: #386662;
+    --on-tertiary: #ffffff;
+    --tertiary-container: #bcece7;
+    --on-tertiary-container: #00201e;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --surface: #12140e;
+        --on-surface: #e2e3d8;
+        --surface-variant: #383a32; /* surface bright */
+        --on-surface-variant: #c5c8b9;
+        --primary: #b2d189;
+        --on-primary: #203600;
+        --primary-container: #364e15;
+        --on-primary-container: #ceeda2;
+        --secondary: #c0cbac;
+        --on-secondary: #2a331e;
+        --secondary-container: #414a33;
+        --on-secondary-container: #dce7c7;
+        --tertiary: #a0d0cb;
+        --on-tertiary: #003734;
+        --tertiary-container: #1f4e4b;
+        --on-tertiary-container: #bcece7;
+    }
+}
+
+/* Define breakpoint limits */
+
+/*
+Please note that these can currently not be used in media queries.
+They are still listed up here to establish a single source of truth
+of what they should be.
+*/
+
+:root {
+    --tablet-breakpoint: 600px; /* Android: compact -> medium breakpoint */
+    --laptop-breakpoint: 992px; /* W3Schools: Laptop / desktops breakpoint */
+    --ultra-wide-breakpoint: 2000px; /* Custom breakpoint for larger than 1080p devices */
+}
+
+/* Remove all default margins and paddings */
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
