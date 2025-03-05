@@ -5,3 +5,11 @@
     grid-template-columns: auto;
     row-gap: 24px;
 }
+
+@media only screen and (min-width: 600px) {
+    .link-container {
+        & > * {
+            max-width: 400px;
+        }
+    }
+}
