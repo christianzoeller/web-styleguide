@@ -1,0 +1,88 @@
+@import "../styleguide/global.css";
+
+/* Define base spacer */
+.spacer {
+    width: var(--horizontal, 0px);
+    height: var(--vertical, 0px);
+}
+
+/* Define spacer sizes */
+.h-4 {
+    --horizontal: 4px;
+    --vertical: 0px;
+}
+
+.h-8 {
+    --horizontal: 8px;
+    --vertical: 0px;
+}
+
+.h-12 {
+    --horizontal: 12px;
+    --vertical: 0px;
+}
+
+.h-16 {
+    --horizontal: 16px;
+    --vertical: 0px;
+}
+
+.h-24 {
+    --horizontal: 24px;
+    --vertical: 0px;
+}
+
+.h-32 {
+    --horizontal: 32px;
+    --vertical: 0px;
+}
+
+.h-48 {
+    --horizontal: 48px;
+    --vertical: 0px;
+}
+
+.h-64 {
+    --horizontal: 64px;
+    --vertical: 0px;
+}
+
+.v-4 {
+    --horizontal: 0px;
+    --vertical: 4px;
+}
+
+.v-8 {
+    --horizontal: 0px;
+    --vertical: 8px;
+}
+
+.v-12 {
+    --horizontal: 0px;
+    --vertical: 12px;
+}
+
+.v-16 {
+    --horizontal: 0px;
+    --vertical: 16px;
+}
+
+.v-24 {
+    --horizontal: 0px;
+    --vertical: 24px;
+}
+
+.v-32 {
+    --horizontal: 0px;
+    --vertical: 32px;
+}
+
+.v-48 {
+    --horizontal: 0px;
+    --vertical: 48px;
+}
+
+.v-64 {
+    --horizontal: 0px;
+    --vertical: 64px;
+}

@@ -1,0 +1,50 @@
+@import "../styleguide/global.css";
+
+/* Define color variables */
+:host {
+    --container-color: var(--surface-variant);
+    --content-color: var(--on-surface);
+}
+
+/* Define base badge */
+.badge {
+    width: fit-content;
+    background-color: var(--container-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+::slotted(*) {
+    color: var(--content-color);
+}
+
+/* Define card styles */
+:host(.primary) {
+    --container-color: var(--primary);
+    --content-color: var(--on-primary);
+}
+
+:host(.primary-variant) {
+    --container-color: var(--primary-container);
+    --content-color: var(--on-primary-container);
+}
+
+:host(.secondary) {
+    --container-color: var(--secondary);
+    --content-color: var(--on-secondary);
+}
+
+:host(.secondary-variant) {
+    --container-color: var(--secondary-container);
+    --content-color: var(--on-secondary-container);
+}
+
+:host(.tertiary) {
+    --container-color: var(--tertiary);
+    --content-color: var(--on-tertiary);
+}
+
+:host(.tertiary-variant) {
+    --container-color: var(--tertiary-container);
+    --content-color: var(--on-tertiary-container);
+}

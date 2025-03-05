@@ -1,0 +1,15 @@
+@import "../styleguide/global.css";
+
+/* Define color variables */
+:host {
+    color: var(--content-color, --primary);
+}
+
+/* Define the text style */
+.title-medium {
+    color: inherit;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bolder;
+    line-height: 1.5rem;
+}

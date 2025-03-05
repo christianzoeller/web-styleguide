@@ -1,0 +1,25 @@
+.card-container {
+    display: grid;
+    row-gap: 24px;
+    grid-template-columns: auto;
+}
+
+/* Break points */
+@media only screen and (min-width: 600px) {
+    .card-container {
+        column-gap: 24px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        column-gap: 32px;
+    }
+
+    ::slotted(*) {
+        flex: 1 1 0px;
+    }
+}

@@ -1,0 +1,81 @@
+@import "../styleguide/global.css";
+
+/* Define color variables */
+:host {
+    --container-color: red;
+    --content-color: red;
+    --hover-container-color: red;
+    --hover-content-color: red;
+}
+
+/* Define base button */
+.button {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--container-color);
+    border: 2px solid var(--container-color);
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+
+    & > * {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 8px;
+        margin-left: 0px;
+    }
+    & > *:first-child {
+        margin-left: 16px;
+    }
+    & > *:last-child {
+        margin-right: 16px;
+    }
+
+    &:hover {
+        background-color: var(--hover-container-color);
+        border: 2px solid var(--hover-content-color);
+    }
+}
+
+::slotted(i) {
+    background-color: var(--content-color);
+    color: var(--container-color);
+}
+
+.button:hover ::slotted(i) {
+    background-color: var(--hover-content-color);
+    color: var(--hover-container-color);
+}
+
+::slotted(*) {
+    color: var(--content-color);
+}
+
+.button:hover ::slotted(*) {
+    color: var(--hover-content-color);
+}
+
+/* Define button styles */
+:host(.primary) {
+    --container-color: var(--primary);
+    --content-color: var(--on-primary);
+    --hover-container-color: var(--primary-container);
+    --hover-content-color: var(--on-primary-container);
+}
+
+:host(.secondary) {
+    --container-color: var(--secondary);
+    --content-color: var(--on-secondary);
+    --hover-container-color: var(--secondary-container);
+    --hover-content-color: var(--on-secondary-container);
+}
+
+:host(.tertiary) {
+    --container-color: var(--tertiary);
+    --content-color: var(--on-tertiary);
+    --hover-container-color: var(--tertiary-container);
+    --hover-content-color: var(--on-tertiary-container);
+}
