@@ -13,6 +13,7 @@
     margin: auto;
     flex: 1;
     padding: 20px 0;
+    color: var(--on-surface);
 }
 
 @media only screen and (min-width: 600px) {
