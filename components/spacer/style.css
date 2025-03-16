@@ -2,9 +2,20 @@
 
 /* Define base spacer */
 :host {
-    display: inline-block;
     width: var(--horizontal, 0px);
     height: var(--vertical, 0px);
+
+    /* Prevent unwanted additional spacing in inline case */
+    font-size: 0;
+    line-height: 0;
+}
+
+:host([size-class^="h-"]) {
+    display: inline-block;
+}
+
+:host([size-class^="v-"]) {
+    display: block;
 }
 
 /* Define spacer sizes */
