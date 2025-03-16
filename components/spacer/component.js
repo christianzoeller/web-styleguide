@@ -28,16 +28,11 @@ class Spacer extends HTMLElement {
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
-    const division = this.shadowRoot.querySelector("div");
-    if (!division) {
-      return;
-    }
-
     switch (name) {
       case "size-class":
-        division.classList.remove(spacerSizes);
+        this.classList.remove(...spacerSizes);
         if (newValue) {
-          division.classList.add(newValue);
+          this.classList.add(newValue);
         }
         break;
     }
