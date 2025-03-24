@@ -2,6 +2,7 @@
 
 /* Define color variables */
 :host {
+    display: var(--text-display, block);
     color: var(--content-color, --on-surface);
 }
 
