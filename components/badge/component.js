@@ -20,7 +20,7 @@ class Badge extends HTMLElement {
   attributeChangedCallback(name, oldValue, newValue) {
     switch (name) {
       case "style":
-        this.classList.remove(badgeStyles);
+        this.classList.remove(...badgeStyles);
         if (newValue) {
           this.classList.add(newValue);
         }

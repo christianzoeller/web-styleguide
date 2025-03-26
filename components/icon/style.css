@@ -1,0 +1,98 @@
+/* Define color variables */
+: host {
+    --container-color: var(--surface);
+    --content-color: var(--on-surface);
+    --hover-container-color: var(--surface-variant);
+    --hover-content-color: var(--on-surface-variant);
+}
+
+/* Define icon types */
+.default {
+    /* Material Icon class */
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+
+    /* Custom rules */
+    padding: 4px;
+    color: var(--container-color);
+    transition-duration: 0.4s;
+
+    &:not(.hover-disabled):hover {
+        color: var(--hover-container-color);
+    }
+}
+
+.round {
+    background-color: var(--container-color);
+    color: var(--content-color);
+    border-radius: 50%;
+
+    &:not(.hover-disabled):hover {
+        background-color: var(--hover-container-color);
+        color: var(--hover-content-color);
+    }
+}
+
+.rounded-square {
+    background-color: var(--container-color);
+    color: var(--content-color);
+    border-radius: 8px;
+
+    &:not(.hover-disabled):hover {
+        background-color: var(--hover-container-color);
+        color: var(--hover-content-color);
+    }
+}
+
+/* Define icon styles */
+:host(.primary) {
+    --container-color: var(--primary);
+    --content-color: var(--on-primary);
+    --hover-container-color: var(--primary-container);
+    --hover-content-color: var(--on-primary-container);
+}
+
+:host(.primary-inverted) {
+    --container-color: var(--on-primary);
+    --content-color: var(--primary);
+    --hover-container-color: var(--on-primary-container);
+    --hover-content-color: var(--primary-container);
+}
+
+:host(.secondary) {
+    --container-color: var(--secondary);
+    --content-color: var(--on-secondary);
+    --hover-container-color: var(--secondary-container);
+    --hover-content-color: var(--on-secondary-container);
+}
+
+:host(.secondary-inverted) {
+    --container-color: var(--on-secondary);
+    --content-color: var(--secondary);
+    --hover-container-color: var(--on-secondary-container);
+    --hover-content-color: var(--secondary-container);
+}
+
+:host(.tertiary) {
+    --container-color: var(--tertiary);
+    --content-color: var(--on-tertiary);
+    --hover-container-color: var(--tertiary-container);
+    --hover-content-color: var(--on-tertiary-container);
+}
+
+:host(.tertiary-inverted) {
+    --container-color: var(--on-tertiary);
+    --content-color: var(--tertiary);
+    --hover-container-color: var(--on-tertiary-container);
+    --hover-content-color: var(--tertiary-container);
+}

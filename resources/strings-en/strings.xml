@@ -13,6 +13,7 @@
     <string name="navigation.toBadges">Badges</string>
     <string name="navigation.toButtons">Buttons</string>
     <string name="navigation.toIndex">Home</string>
+    <string name="navigation.toIcons">Icons</string>
     <string name="navigation.toTypography">Typography</string>
 
     <!-- Badges -->
@@ -34,6 +35,16 @@
     <string name="buttons.container.description">Something about this convenience container for using multiple buttons.</string>
     <string name="buttons.container.restricted.title">Button Container with Restricted Width</string>
     <string name="buttons.container.restricted.description">Something about how this container behaves different on desktop.</string>
+
+    <!-- Icons -->
+    <string name="icons.title">Icons</string>
+    <string name="icons.description">Some fascinating description of what icons are capable of.</string>
+    <string name="icons.default.title">Default icons</string>
+    <string name="icons.default.description">Some explanation about default icons.</string>
+    <string name="icons.round.title">Round icons</string>
+    <string name="icons.round.description">Something about how the container of these icons is a circle.</string>
+    <string name="icons.roundedSquare.title">Square icons with round edges</string>
+    <string name="icons.roundedSquare.description">Something about how these are a variation of the round icons.</string>
 
     <!-- Typography -->
     <string name="typography.title">Typography</string>
