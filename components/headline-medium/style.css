@@ -2,11 +2,13 @@
 
 /* Define color variables */
 :host {
+    display: var(--text-display, block);
     color: var(--content-color, --on-surface);
 }
 
 /* Define the text style */
 .headline-medium {
+    display: inherit;
     color: inherit;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.75rem;
