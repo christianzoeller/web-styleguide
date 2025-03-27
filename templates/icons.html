@@ -2,7 +2,7 @@
 <html lang="{{languageCode}}">
     <head>
         <title>{{translations.icons.title}}</title>
-        <link rel="stylesheet" href="stylesheets/global.css" />
+        <link rel="stylesheet" href="stylesheets/icons.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <link
@@ -73,49 +73,58 @@
                 {{translations.icons.round.description}}
             </body-medium>
 
-            <headline-small>{{translations.global.primary}}</headline-small>
+            {{#translations.global.colors}}
+            <headline-small>{{name}}</headline-small>
             <default-spacer size-class="v-16"></default-spacer>
-            <default-icon
-                type="round"
-                icon="code"
-                style="primary"
-            ></default-icon>
+            <div class="icon-row">
+                <default-icon
+                    type="round"
+                    icon="code"
+                    icon-padding="8px"
+                    style="{{nameLowercase}}"
+                ></default-icon>
+                <default-spacer size-class="h-8"></default-spacer>
+                <default-icon
+                    type="round"
+                    icon="code"
+                    style="{{nameLowercase}}"
+                ></default-icon>
+                <default-spacer size-class="h-8"></default-spacer>
+                <default-icon
+                    type="round"
+                    icon="code"
+                    icon-size="16px"
+                    icon-padding="8px"
+                    style="{{nameLowercase}}"
+                ></default-icon>
+            </div>
             <default-spacer size-class="v-8"></default-spacer>
-            <default-icon
-                type="round"
-                icon="code"
-                style="primary-inverted"
-            ></default-icon>
+            <div class="icon-row">
+                <default-icon
+                    type="round"
+                    icon="code"
+                    icon-padding="8px"
+                    style="{{nameLowercase}}-inverted"
+                ></default-icon>
+                <default-spacer size-class="h-8"></default-spacer>
+                <default-icon
+                    type="round"
+                    icon="code"
+                    style="{{nameLowercase}}-inverted"
+                ></default-icon>
+                <default-spacer size-class="h-8"></default-spacer>
+                <default-icon
+                    type="round"
+                    icon="code"
+                    icon-size="16px"
+                    icon-padding="8px"
+                    style="{{nameLowercase}}-inverted"
+                ></default-icon>
+            </div>
             <default-spacer size-class="v-24"></default-spacer>
-            <headline-small>{{translations.global.secondary}}</headline-small>
-            <default-spacer size-class="v-16"></default-spacer>
-            <default-icon
-                type="round"
-                icon="code"
-                style="secondary"
-            ></default-icon>
-            <default-spacer size-class="v-8"></default-spacer>
-            <default-icon
-                type="round"
-                icon="code"
-                style="secondary-inverted"
-            ></default-icon>
-            <default-spacer size-class="v-24"></default-spacer>
-            <headline-small>{{translations.global.tertiary}}</headline-small>
-            <default-spacer size-class="v-16"></default-spacer>
-            <default-icon
-                type="round"
-                icon="code"
-                style="tertiary"
-            ></default-icon>
-            <default-spacer size-class="v-8"></default-spacer>
-            <default-icon
-                type="round"
-                icon="code"
-                style="tertiary-inverted"
-            ></default-icon>
+            {{/translations.global.colors}}
 
-            <default-spacer size-class="v-48"></default-spacer>
+            <default-spacer size-class="v-24"></default-spacer>
 
             <headline-medium>
                 {{translations.icons.roundedSquare.title}}
@@ -125,49 +134,58 @@
                 {{translations.icons.roundedSquare.description}}
             </body-medium>
 
-            <headline-small>{{translations.global.primary}}</headline-small>
+            {{#translations.global.colors}}
+            <headline-small>{{name}}</headline-small>
             <default-spacer size-class="v-16"></default-spacer>
-            <default-icon
-                type="rounded-square"
-                icon="code"
-                style="primary"
-            ></default-icon>
+            <div class="icon-row">
+                <default-icon
+                    type="rounded-square"
+                    icon="code"
+                    icon-padding="8px"
+                    style="{{nameLowercase}}"
+                ></default-icon>
+                <default-spacer size-class="h-8"></default-spacer>
+                <default-icon
+                    type="rounded-square"
+                    icon="code"
+                    style="{{nameLowercase}}"
+                ></default-icon>
+                <default-spacer size-class="h-8"></default-spacer>
+                <default-icon
+                    type="rounded-square"
+                    icon="code"
+                    icon-size="16px"
+                    icon-padding="8px"
+                    style="{{nameLowercase}}"
+                ></default-icon>
+            </div>
             <default-spacer size-class="v-8"></default-spacer>
-            <default-icon
-                type="rounded-square"
-                icon="code"
-                style="primary-inverted"
-            ></default-icon>
+            <div class="icon-row">
+                <default-icon
+                    type="rounded-square"
+                    icon="code"
+                    icon-padding="8px"
+                    style="{{nameLowercase}}-inverted"
+                ></default-icon>
+                <default-spacer size-class="h-8"></default-spacer>
+                <default-icon
+                    type="rounded-square"
+                    icon="code"
+                    style="{{nameLowercase}}-inverted"
+                ></default-icon>
+                <default-spacer size-class="h-8"></default-spacer>
+                <default-icon
+                    type="rounded-square"
+                    icon="code"
+                    icon-size="16px"
+                    icon-padding="8px"
+                    style="{{nameLowercase}}-inverted"
+                ></default-icon>
+            </div>
             <default-spacer size-class="v-24"></default-spacer>
-            <headline-small>{{translations.global.secondary}}</headline-small>
-            <default-spacer size-class="v-16"></default-spacer>
-            <default-icon
-                type="rounded-square"
-                icon="code"
-                style="secondary"
-            ></default-icon>
-            <default-spacer size-class="v-8"></default-spacer>
-            <default-icon
-                type="rounded-square"
-                icon="code"
-                style="secondary-inverted"
-            ></default-icon>
-            <default-spacer size-class="v-24"></default-spacer>
-            <headline-small>{{translations.global.tertiary}}</headline-small>
-            <default-spacer size-class="v-16"></default-spacer>
-            <default-icon
-                type="rounded-square"
-                icon="code"
-                style="tertiary"
-            ></default-icon>
-            <default-spacer size-class="v-8"></default-spacer>
-            <default-icon
-                type="rounded-square"
-                icon="code"
-                style="tertiary-inverted"
-            ></default-icon>
+            {{/translations.global.colors}}
 
-            <default-spacer size-class="v-48"></default-spacer>
+            <default-spacer size-class="v-24"></default-spacer>
 
             <default-spacer size-class="v-64"></default-spacer>
         </main-container>

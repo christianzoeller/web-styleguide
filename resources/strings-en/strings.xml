@@ -8,6 +8,14 @@
     <string name="global.primary">Primary</string>
     <string name="global.secondary">Secondary</string>
     <string name="global.tertiary">Tertiary</string>
+    <string-array name="global.colors">
+        <item name="primary.name">Primary</item>
+        <item name="primary.nameLowercase">primary</item>
+        <item name="secondary.name">Secondary</item>
+        <item name="secondary.nameLowercase">secondary</item>
+        <item name="tertiary.name">Tertiary</item>
+        <item name="tertiary.nameLowercase">tertiary</item>
+    </string-array>
 
     <!-- Navigation -->
     <string name="navigation.toBadges">Badges</string>

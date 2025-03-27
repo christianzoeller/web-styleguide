@@ -10,7 +10,14 @@ const iconStyles = [
 ];
 
 class Icon extends HTMLElement {
-  static observedAttributes = ["icon", "type", "style", "hover-disabled"];
+  static observedAttributes = [
+    "icon",
+    "icon-size",
+    "icon-padding",
+    "type",
+    "style",
+    "hover-disabled",
+  ];
 
   constructor() {
     super();
@@ -34,6 +41,16 @@ class Icon extends HTMLElement {
       case "icon":
         if (newValue) {
           span.textContent = newValue;
+        }
+        break;
+      case "icon-size":
+        if (newValue) {
+          span.style.fontSize = newValue;
+        }
+        break;
+      case "icon-padding":
+        if (newValue) {
+          span.style.padding = newValue;
         }
         break;
       case "type":

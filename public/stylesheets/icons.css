@@ -1,0 +1,7 @@
+@import url(global.css);
+
+.icon-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
