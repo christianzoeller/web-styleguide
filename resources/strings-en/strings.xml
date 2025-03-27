@@ -43,6 +43,8 @@
     <string name="buttons.container.description">Something about this convenience container for using multiple buttons.</string>
     <string name="buttons.container.restricted.title">Button Container with Restricted Width</string>
     <string name="buttons.container.restricted.description">Something about how this container behaves different on desktop.</string>
+    <string name="buttons.icon.title">Icon Buttons</string>
+    <string name="buttons.icon.description">Something about how these are just clickable icons.</string>
 
     <!-- Icons -->
     <string name="icons.title">Icons</string>

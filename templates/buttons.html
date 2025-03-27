@@ -5,6 +5,11 @@
         <link rel="stylesheet" href="stylesheets/buttons.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+
         <script src="components/body-large.js"></script>
         <script src="components/body-medium.js"></script>
         <script src="components/bordered-button.js"></script>
@@ -13,6 +18,7 @@
         <script src="components/headline-large.js"></script>
         <script src="components/headline-medium.js"></script>
         <script src="components/headline-small.js"></script>
+        <script src="components/icon-button.js"></script>
         <script src="components/main-container.js"></script>
         <script src="components/spacer.js"></script>
     </head>
@@ -134,6 +140,25 @@
                     </body-large>
                 </default-button>
             </button-container>
+
+            <default-spacer size-class="v-48"></default-spacer>
+            <headline-medium>
+                {{translations.buttons.icon.title}}
+            </headline-medium>
+            <default-spacer size-class="v-32"></default-spacer>
+            <body-medium>
+                {{translations.buttons.icon.description}}
+            </body-medium>
+            <default-spacer size-class="v-48"></default-spacer>
+
+            <div class="vertical-button-container">
+                {{#translations.global.colors}}
+                <icon-button
+                    icon="menu"
+                    style="{{nameLowercase}}"
+                ></icon-button>
+                {{/translations.global.colors}}
+            </div>
 
             <default-spacer size-class="v-64"></default-spacer>
         </main-container>

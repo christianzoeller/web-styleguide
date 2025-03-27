@@ -1,0 +1,58 @@
+/* Define color variables */
+: host {
+    --container-color: red;
+    --content-color: red;
+    --hover-container-color: red;
+    --hover-content-color: red;
+}
+
+/* Define icon types */
+.icon-button {
+    /* Material Icon class */
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+
+    /* Custom rules */
+    padding: 8px;
+    background-color: var(--container-color);
+    color: var(--content-color);
+    border-radius: 8px;
+    transition-duration: 0.4s;
+
+    &:hover {
+        background-color: var(--hover-container-color);
+        color: var(--hover-content-color);
+    }
+}
+
+/* Define icon styles */
+:host(.primary) {
+    --container-color: var(--primary);
+    --content-color: var(--on-primary);
+    --hover-container-color: var(--primary-container);
+    --hover-content-color: var(--on-primary-container);
+}
+
+:host(.secondary) {
+    --container-color: var(--secondary);
+    --content-color: var(--on-secondary);
+    --hover-container-color: var(--secondary-container);
+    --hover-content-color: var(--on-secondary-container);
+}
+
+:host(.tertiary) {
+    --container-color: var(--tertiary);
+    --content-color: var(--on-tertiary);
+    --hover-container-color: var(--tertiary-container);
+    --hover-content-color: var(--on-tertiary-container);
+}
