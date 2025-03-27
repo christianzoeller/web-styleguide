@@ -61,7 +61,7 @@ class Icon extends HTMLElement {
         break;
       case "style":
         this.classList.remove(...iconStyles);
-        if (newValue) {
+        if (newValue && iconStyles.includes(newValue)) {
           this.classList.add(newValue);
         }
         break;

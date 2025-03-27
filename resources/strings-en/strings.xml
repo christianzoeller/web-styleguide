@@ -37,8 +37,12 @@
     <string name="buttons.description">Some vivid description of what buttons can do.</string>
     <string name="buttons.default.title">Default Buttons</string>
     <string name="buttons.default.description">Something about these default buttons.</string>
+    <string name="buttons.default.icons.title">Default Buttons With Icons</string>
+    <string name="buttons.default.icons.description">Something about how you can add leading and trailing icons.</string>
     <string name="buttons.bordered.title">Bordered Buttons</string>
     <string name="buttons.bordered.description">Something about how these buttons are different from the default ones.</string>
+    <string name="buttons.bordered.icons.title">Bordered Buttons With Icons</string>
+    <string name="buttons.bordered.icons.description">Something about how you can also add icons to the bordered variant.</string>
     <string name="buttons.container.title">Button Container</string>
     <string name="buttons.container.description">Something about this convenience container for using multiple buttons.</string>
     <string name="buttons.container.restricted.title">Button Container with Restricted Width</string>

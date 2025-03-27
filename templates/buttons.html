@@ -18,6 +18,7 @@
         <script src="components/headline-large.js"></script>
         <script src="components/headline-medium.js"></script>
         <script src="components/headline-small.js"></script>
+        <script src="components/icon.js"></script>
         <script src="components/icon-button.js"></script>
         <script src="components/main-container.js"></script>
         <script src="components/spacer.js"></script>
@@ -40,17 +41,43 @@
             <default-spacer size-class="v-48"></default-spacer>
 
             <div class="vertical-button-container">
-                <default-button style="primary">
+                {{#translations.global.colors}}
+                <default-button style="{{nameLowercase}}">
+                    <body-large slot="label">{{name}}</body-large>
+                </default-button>
+                {{/translations.global.colors}}
+            </div>
+
+            <default-spacer size-class="v-48"></default-spacer>
+            <headline-small>
+                {{translations.buttons.default.icons.title}}
+            </headline-small>
+            <default-spacer size-class="v-24"></default-spacer>
+            <body-medium>
+                {{translations.buttons.default.icons.description}}
+            </body-medium>
+            <default-spacer size-class="v-32"></default-spacer>
+
+            <div class="vertical-button-container">
+                <default-button style="primary" leading-icon="arrow_back_ios">
                     <body-large slot="label">
                         {{translations.global.primary}}
                     </body-large>
                 </default-button>
-                <default-button style="secondary">
+                <default-button
+                    style="secondary"
+                    trailing-icon="arrow_forward_ios"
+                >
                     <body-large slot="label">
                         {{translations.global.secondary}}
                     </body-large>
                 </default-button>
-                <default-button style="tertiary">
+                <default-button
+                    style="tertiary"
+                    leading-icon="question_mark"
+                    leading-icon-type="round"
+                    trailing-icon="arrow_forward_ios"
+                >
                     <body-large slot="label">
                         {{translations.global.tertiary}}
                     </body-large>
@@ -68,17 +95,43 @@
             <default-spacer size-class="v-48"></default-spacer>
 
             <div class="vertical-button-container">
-                <bordered-button style="primary">
+                {{#translations.global.colors}}
+                <bordered-button style="{{nameLowercase}}">
+                    <body-large slot="label">{{name}}</body-large>
+                </bordered-button>
+                {{/translations.global.colors}}
+            </div>
+
+            <default-spacer size-class="v-48"></default-spacer>
+            <headline-small>
+                {{translations.buttons.bordered.icons.title}}
+            </headline-small>
+            <default-spacer size-class="v-24"></default-spacer>
+            <body-medium>
+                {{translations.buttons.bordered.icons.description}}
+            </body-medium>
+            <default-spacer size-class="v-32"></default-spacer>
+
+            <div class="vertical-button-container">
+                <bordered-button style="primary" leading-icon="arrow_back_ios">
                     <body-large slot="label">
                         {{translations.global.primary}}
                     </body-large>
                 </bordered-button>
-                <bordered-button style="secondary">
+                <bordered-button
+                    style="secondary"
+                    trailing-icon="arrow_forward_ios"
+                >
                     <body-large slot="label">
                         {{translations.global.secondary}}
                     </body-large>
                 </bordered-button>
-                <bordered-button style="tertiary">
+                <bordered-button
+                    style="tertiary"
+                    leading-icon="question_mark"
+                    leading-icon-type="round"
+                    trailing-icon="arrow_forward_ios"
+                >
                     <body-large slot="label">
                         {{translations.global.tertiary}}
                     </body-large>
@@ -96,21 +149,11 @@
             <default-spacer size-class="v-48"></default-spacer>
 
             <button-container>
-                <default-button style="primary">
-                    <body-large slot="label">
-                        {{translations.global.primary}}
-                    </body-large>
+                {{#translations.global.colors}}
+                <default-button style="{{nameLowercase}}">
+                    <body-large slot="label">{{name}}</body-large>
                 </default-button>
-                <default-button style="secondary">
-                    <body-large slot="label">
-                        {{translations.global.secondary}}
-                    </body-large>
-                </default-button>
-                <default-button style="tertiary">
-                    <body-large slot="label">
-                        {{translations.global.tertiary}}
-                    </body-large>
-                </default-button>
+                {{/translations.global.colors}}
             </button-container>
 
             <default-spacer size-class="v-48"></default-spacer>
@@ -124,21 +167,11 @@
             <default-spacer size-class="v-32"></default-spacer>
 
             <button-container restrict-width-on-desktop="true">
-                <default-button style="primary">
-                    <body-large slot="label">
-                        {{translations.global.primary}}
-                    </body-large>
+                {{#translations.global.colors}}
+                <default-button style="{{nameLowercase}}">
+                    <body-large slot="label">{{name}}</body-large>
                 </default-button>
-                <default-button style="secondary">
-                    <body-large slot="label">
-                        {{translations.global.secondary}}
-                    </body-large>
-                </default-button>
-                <default-button style="tertiary">
-                    <body-large slot="label">
-                        {{translations.global.tertiary}}
-                    </body-large>
-                </default-button>
+                {{/translations.global.colors}}
             </button-container>
 
             <default-spacer size-class="v-48"></default-spacer>

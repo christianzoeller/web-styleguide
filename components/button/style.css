@@ -34,20 +34,20 @@
         margin-right: 16px;
     }
 
+    & default-icon {
+        --icon-container-color: var(--content-color);
+        --icon-content-color: var(--container-color);
+    }
+
     &:hover {
         background-color: var(--hover-container-color);
         border: 2px solid var(--hover-content-color);
+
+        & default-icon {
+            --icon-container-color: var(--hover-content-color);
+            --icon-content-color: var(--hover-container-color);
+        }
     }
-}
-
-::slotted(i) {
-    background-color: var(--content-color);
-    color: var(--container-color);
-}
-
-.button:hover ::slotted(i) {
-    background-color: var(--hover-content-color);
-    color: var(--hover-container-color);
 }
 
 ::slotted(*) {

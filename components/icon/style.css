@@ -1,9 +1,9 @@
 /* Define color variables */
 :host {
-    --container-color: var(--surface);
-    --content-color: var(--on-surface);
-    --hover-container-color: var(--surface-variant);
-    --hover-content-color: var(--on-surface-variant);
+    --icon-container-color: var(--surface);
+    --icon-content-color: var(--on-surface);
+    --icon-hover-container-color: var(--surface-variant);
+    --icon-hover-content-color: var(--on-surface-variant);
 }
 
 /* Define icon types */
@@ -24,75 +24,75 @@
 
     /* Custom rules */
     padding: 4px;
-    color: var(--container-color);
+    color: var(--icon-container-color);
     transition-duration: 0.4s;
 
     &:not(.hover-disabled):hover {
-        color: var(--hover-container-color);
+        color: var(--icon-hover-container-color);
     }
 }
 
 .round {
-    background-color: var(--container-color);
-    color: var(--content-color);
+    background-color: var(--icon-container-color);
+    color: var(--icon-content-color);
     border-radius: 50%;
 
     &:not(.hover-disabled):hover {
-        background-color: var(--hover-container-color);
-        color: var(--hover-content-color);
+        background-color: var(--icon-hover-container-color);
+        color: var(--icon-hover-content-color);
     }
 }
 
 .rounded-square {
-    background-color: var(--container-color);
-    color: var(--content-color);
+    background-color: var(--icon-container-color);
+    color: var(--icon-content-color);
     border-radius: 8px;
 
     &:not(.hover-disabled):hover {
-        background-color: var(--hover-container-color);
-        color: var(--hover-content-color);
+        background-color: var(--icon-hover-container-color);
+        color: var(--icon-hover-content-color);
     }
 }
 
 /* Define icon styles */
 :host(.primary) {
-    --container-color: var(--primary);
-    --content-color: var(--on-primary);
-    --hover-container-color: var(--primary-container);
-    --hover-content-color: var(--on-primary-container);
+    --icon-container-color: var(--primary);
+    --icon-content-color: var(--on-primary);
+    --icon-hover-container-color: var(--primary-container);
+    --icon-hover-content-color: var(--on-primary-container);
 }
 
 :host(.primary-inverted) {
-    --container-color: var(--on-primary);
-    --content-color: var(--primary);
-    --hover-container-color: var(--on-primary-container);
-    --hover-content-color: var(--primary-container);
+    --icon-container-color: var(--on-primary);
+    --icon-content-color: var(--primary);
+    --icon-hover-container-color: var(--on-primary-container);
+    --icon-hover-content-color: var(--primary-container);
 }
 
 :host(.secondary) {
-    --container-color: var(--secondary);
-    --content-color: var(--on-secondary);
-    --hover-container-color: var(--secondary-container);
-    --hover-content-color: var(--on-secondary-container);
+    --icon-container-color: var(--secondary);
+    --icon-content-color: var(--on-secondary);
+    --icon-hover-container-color: var(--secondary-container);
+    --icon-hover-content-color: var(--on-secondary-container);
 }
 
 :host(.secondary-inverted) {
-    --container-color: var(--on-secondary);
-    --content-color: var(--secondary);
-    --hover-container-color: var(--on-secondary-container);
-    --hover-content-color: var(--secondary-container);
+    --icon-container-color: var(--on-secondary);
+    --icon-content-color: var(--secondary);
+    --icon-hover-container-color: var(--on-secondary-container);
+    --icon-hover-content-color: var(--secondary-container);
 }
 
 :host(.tertiary) {
-    --container-color: var(--tertiary);
-    --content-color: var(--on-tertiary);
-    --hover-container-color: var(--tertiary-container);
-    --hover-content-color: var(--on-tertiary-container);
+    --icon-container-color: var(--tertiary);
+    --icon-content-color: var(--on-tertiary);
+    --icon-hover-container-color: var(--tertiary-container);
+    --icon-hover-content-color: var(--on-tertiary-container);
 }
 
 :host(.tertiary-inverted) {
-    --container-color: var(--on-tertiary);
-    --content-color: var(--tertiary);
-    --hover-container-color: var(--on-tertiary-container);
-    --hover-content-color: var(--tertiary-container);
+    --icon-container-color: var(--on-tertiary);
+    --icon-content-color: var(--tertiary);
+    --icon-hover-container-color: var(--on-tertiary-container);
+    --icon-hover-content-color: var(--tertiary-container);
 }
