@@ -1,5 +1,5 @@
 /* Define color variables */
-: host {
+:host {
     --container-color: var(--surface);
     --content-color: var(--on-surface);
     --hover-container-color: var(--surface-variant);
