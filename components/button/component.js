@@ -33,6 +33,11 @@ class Button extends HTMLElement {
     const leadingIcon = icons[0];
     const trailingIcon = icons[1];
 
+    const placeholderSizeClass = "h-32";
+    const spacers = link.querySelectorAll("default-spacer");
+    const leadingIconPlaceholder = spacers[1];
+    const trailingIconPlaceholder = spacers[4];
+
     switch (name) {
       case "href":
         link.setAttribute("href", newValue);
@@ -51,8 +56,23 @@ class Button extends HTMLElement {
         if (newValue && leadingIcon) {
           leadingIcon.setAttribute("icon", newValue);
           leadingIcon.style.display = "inline-block";
+          if (
+            leadingIconPlaceholder &&
+            leadingIconPlaceholder.classList.contains(placeholderSizeClass)
+          ) {
+            leadingIconPlaceholder.classList.remove(placeholderSizeClass);
+          }
+
+          if (trailingIcon && trailingIconPlaceholder) {
+            if (trailingIcon.style.display === "none") {
+              trailingIconPlaceholder.classList.add(placeholderSizeClass);
+            }
+          }
         } else if (!newValue && leadingIcon) {
           leadingIcon.style.display = "none";
+          if (leadingIconPlaceholder) {
+            leadingIconPlaceholder.classList.add(placeholderSizeClass);
+          }
         }
         break;
       case "leading-icon-type":
@@ -64,8 +84,23 @@ class Button extends HTMLElement {
         if (newValue && trailingIcon) {
           trailingIcon.setAttribute("icon", newValue);
           trailingIcon.style.display = "inline-block";
+          if (
+            trailingIconPlaceholder &&
+            trailingIconPlaceholder.classList.contains(placeholderSizeClass)
+          ) {
+            trailingIconPlaceholder.classList.remove(placeholderSizeClass);
+          }
+
+          if (leadingIcon && leadingIconPlaceholder) {
+            if (leadingIcon.style.display === "none") {
+              leadingIconPlaceholder.classList.add(placeholderSizeClass);
+            }
+          }
         } else if (!newValue && trailingIcon) {
           trailingIcon.style.display = "none";
+          if (trailingIconPlaceholder) {
+            trailingIconPlaceholder.classList.add(placeholderSizeClass);
+          }
         }
         break;
       case "trailing-icon-type":

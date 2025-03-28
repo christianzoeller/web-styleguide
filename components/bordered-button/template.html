@@ -1,13 +1,23 @@
 <a class="bordered-button">
+    <default-spacer size-class="h-16"></default-spacer>
+
+    <default-spacer name="leading-icon-placeholder"></default-spacer>
     <default-icon
         icon-size="16px"
         icon-padding="8px"
         hover-disabled="true"
     ></default-icon>
+
+    <default-spacer size-class="h-8"></default-spacer>
     <span><slot name="label"></slot></span>
+    <default-spacer size-class="h-8"></default-spacer>
+
+    <default-spacer name="trailing-icon-placeholder"></default-spacer>
     <default-icon
         icon-size="16px"
         icon-padding="8px"
         hover-disabled="true"
     ></default-icon>
+
+    <default-spacer size-class="h-16"></default-spacer>
 </a>
